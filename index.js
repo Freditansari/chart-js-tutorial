@@ -10,7 +10,7 @@ const data = axios
     .get('https://my-json-server.typicode.com/Freditansari/fake-sales-data/db')
     .then(result => {
         let salesChart = new Chart(myChart, {
-            type: 'doughnut',
+            type: 'bar',
             data:{
                 labels:result.data.months,
                 datasets:[{
